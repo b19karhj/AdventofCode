@@ -16,6 +16,5 @@ for(i = 0; i < array.length ; i++){
         activeValue +=1;
     }
     var result = sum
-    
 }
 console.log(activeValue)
