@@ -30,14 +30,22 @@ for(i = 0; i < array.length; i++){
 numbersforward = numbersforward.map(Number)
 numbersup = numbersup.map(Number)
 numbersdown = numbersdown.map(Number)
-for (i = 0; i < numbersforward.length; i++){
-    forward += numbersforward[i]
-}
-for(i = 0; i < numbersup.length; i++){
-    up += numbersup[i]
-}
-for(i = 0; i < numbersdown.length; i++){
-    down += numbersdown[i]
-    
-}
-console.log((down-up) * forward)
+
+
+    for (j = 0; j < numbersforward.length; j++){
+        forward += numbersforward[j]
+       
+    }
+    for(k = 0; k < numbersup.length; k++){
+        up += numbersup[k]
+        
+        
+    }
+    for(h = 0; h < numbersdown.length; h++){
+        down += numbersdown[h]
+     
+        
+    }
+
+
+console.log((down-up) * forward);
