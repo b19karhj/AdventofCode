@@ -9,11 +9,11 @@ const textToArray = (path) => {
     return textByLine
 }
 var firstarray = textToArray('test4.txt');
-var number = firstarray.splice(0,1)[0].split(',');
+var numbers = firstarray.splice(0,1)[0].split(',');
 var allBricks = [];
 var testArray = [];
 
-console.log(number.length)
+
 
 for(let row = 0; row < firstarray.length -1; row++){
     
@@ -23,11 +23,34 @@ for(let row = 0; row < firstarray.length -1; row++){
     var brick = [];
     for(let i = 0; i < 5; i++){
         brick.push (firstarray[row+i].trim().split(/[\s,\t]+/));
-        // console.log((firstarray[row+i]))
+        
     }
     row += 4;
-    // allBricks.push (brick);
+    allBricks.push (brick);
 }
+
+// numbers.forEach(function(numb){
+//     console.log(numb+'hej')
+//     allBricks.forEach(function(row){
+//         row.forEach(function(col){
+//             col.forEach(function(number){
+//                 console.log(number)
+//             });
+//         });
+//     });
+// })
+
+for(let ball = 0;ball < numbers.length; ball++){
+    console.log(numbers[ball+'hej'])
+    for(let row = 0; row < allBricks.length; row++){
+        for(let col = 0; col < allBricks[row].length; col++){
+            for(let number = 0; number < allBricks.length; number++){
+                console.log(allBricks[row][col][number])
+            }
+        }
+    }
+}
+
 // for(let i = 0; i < allBricks.length; i++){
 //     console.log(allBricks[i][0]);
 //     console.log(allBricks[i][1]);
