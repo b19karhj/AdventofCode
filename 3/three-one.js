@@ -9,7 +9,7 @@ const textToArray = (path) => {
     return textByLine
 }
 
-var array = textToArray('day3.txt')
+var array = textToArray('textt.txt')
 var gammaRateArray = [];
 var epsilonRateArray = [];
 while(char < 12){
@@ -31,8 +31,8 @@ while(char < 12){
         gammaRateArray.push (1)
         epsilonRateArray.push (0)
     }
-    var zero = 0;
-    var one = 0;
+     zero = 0;
+     one = 0;
 }
  
 let gRate = gammaRateArray.join('')
