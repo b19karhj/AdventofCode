@@ -39,18 +39,33 @@ for(let row = 0; row < firstarray.length -1; row++){
 //         });
 //     });
 // })
-
-for(let ball = 0;ball < numbers.length; ball++){
-    console.log(numbers[ball+'hej'])
+var tempresult= [];
+for(let ball = 0; ball < numbers.length; ball++){
+    // console.log(numbers[ball+'------------'])
+    numbers[ball]
     for(let row = 0; row < allBricks.length; row++){
+        // console.log(allBricks[row][ball])
+        allBricks[row][ball]
         for(let col = 0; col < allBricks[row].length; col++){
-            for(let number = 0; number < allBricks.length; number++){
-                console.log(allBricks[row][col][number])
-            }
-        }
+            // console.log(allBricks[row][col])
+            for(let number = 0; number < allBricks.length -1; number++){
+               allBricks[row][col][number]
+                if(numbers[ball] == allBricks[row][col][number]){
+                    console.log('hej')
+                    tempresult.push (allBricks[row][col])
+                    // console.log(numbers[ball])
+                    console.log(allBricks[row][col])
+                    
+                }
+                
+                
+            }   
+        }   
     }
 }
-
+// for(let i = 0; i < tempresult.length ; i++){
+//     console.log(tempresult[i])
+// }
 // for(let i = 0; i < allBricks.length; i++){
 //     console.log(allBricks[i][0]);
 //     console.log(allBricks[i][1]);
