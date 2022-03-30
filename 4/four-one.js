@@ -13,6 +13,7 @@ var numbers = firstarray.splice(0,1)[0].split(',');
 var allBricks = [];
 var testArray = [];
 hej
+hejdå
 
 
 for(let row = 0; row < firstarray.length -1; row++){
