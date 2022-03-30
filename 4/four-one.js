@@ -14,6 +14,7 @@ var allBricks = [];
 var testArray = [];
 hej
 hejdå
+test2
 
 
 for(let row = 0; row < firstarray.length -1; row++){
